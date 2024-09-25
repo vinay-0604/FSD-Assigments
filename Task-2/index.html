@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>COMPANY DIRECTORY PORTAL</h1>
+    
+    <!-- Registration Form Section -->
+    <section id="employee-registration">
+        <h2>Employee Registration Form</h2>
+        <form id="registration-form">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="HR">HR</option>
+                <option value="IT">IT</option>
+                <option value="Finance">Finance</option>
+                <option value="Marketing">Marketing</option>
+            </select><br><br>
+
+            <label for="employeeId">Employee ID:</label>
+            <input type="number" id="employeeId" name="employeeId" required><br><br>
+
+            <label for="profilePic">Profile Picture URL:</label>
+            <input type="url" id="profilePic" name="profilePic" required><br><br>
+
+            <button type="submit">Register Employee</button>
+        </form>
+    </section>
+
+    
+
+    <!-- Employee List Section -->
+    <section id="employee-list">
+        <h2>List of Employees</h2>
+        <ol id="employees">
+            <li><a href="#">Rohit Sharma - rohit@outlook.com</a></li>
+            <li><a href="#">Virat Kohli - virat@outlook.com</a></li>
+            <li><a href="#">KL Rahul - rahul@outlook.com</a></li>
+            <li><a href="#">Jasprit Bumrah - jasprit@outlook.com</a></li>
+        </ol>
+    </section>
+
+    
+
+    <!-- Employee Details Section -->
+    <section id="employee-details">
+        <h2>Employee Details</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rohit Sharma</td>
+                    <td>12345</td>
+                    <td>IT</td>
+                    <td><img src="https://via.placeholder.com/50" alt="Picture-1"></td>
+                </tr>
+                <tr>
+                    <td>Virat Kohli</td>
+                    <td>54321</td>
+                    <td>HR</td>
+                    <td><img src="https://via.placeholder.com/50" alt="Picture-2"></td>
+                </tr>
+                </tr>
+                    <td>KL Rahul</td>
+                    <td>37451</td>
+                    <td>Finance</td>
+                    <td><img src="https://via.placeholder.com/50" alt="Picture-2"></td>
+                </tr>
+                </tr>
+                    <td>Jasprit Bumrah</td>
+                    <td>93647</td>
+                    <td>Marketing</td>
+                    <td><img src="https://via.placeholder.com/50" alt="Picture-2"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    
+
+    <!-- Map of address section -->
+    <section id="map">
+        <h2>Company Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15220.794429855236!2d78.3899895!3d17.4980302!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1727245588431!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+</body>
+</html>
