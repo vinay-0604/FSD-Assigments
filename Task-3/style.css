@@ -1,0 +1,120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "topNavbar"
+    "leftSection" "middleSection" "rightSection"
+    "signUp"
+    "downFooter";
+}
+
+.box {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+/* .container{
+    display: grid;
+    grid-template-areas: "topNavbar topNavbar topNavbar topNavbar"
+    "leftSection middleSection middleSection rightSection"
+    "signUp signUp signUp signUp"
+    "downFooter downFooter downFooter downFooter" ;
+}
+
+.box{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+} */
+.box#box1 {
+  padding: 30px;
+  background-color: antiquewhite;
+}
+
+.box#box2 {
+  padding: 100px;
+  background-color: aqua;
+}
+.box#box3 {
+  padding: 100px;
+  background-color: bisque;
+}
+.box#box4 {
+  padding: 100px;
+  background-color: aquamarine;
+}
+.box#box5 {
+  padding: 75px;
+  background-color: cadetblue;
+}
+.box#box6 {
+  padding: 30px;
+  background-color: burlywood;
+}
+
+#box1 {
+  grid-area: topNavbar;
+}
+
+#box2 {
+  grid-area: leftSection;
+}
+
+#box3 {
+  grid-area: middleSection;
+}
+
+#box4 {
+  grid-area: rightSection;
+}
+
+#box5 {
+  grid-area: signUp;
+}
+
+#box6 {
+  grid-area: downFooter;
+}
+
+@media (min-width: 700px) {
+    .container {
+      display: grid;
+      grid-template-areas: "topNavbar topNavbar topNavbar topNavbar"
+      "signUp signUp signUp signUp"
+      "middleSection middleSection middleSection middleSection"
+      "leftSection leftSection rightSection rightSection"
+      "leftSection leftSection rightSection rightSection"
+      "downFooter downFooter downFooter downFooter";
+   }
+  
+    .box {
+      font-size: 25px;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+
+@media (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "topNavbar topNavbar topNavbar topNavbar"
+      "leftSection middleSection middleSection rightSection"
+      "signUp signUp signUp signUp"
+      "downFooter downFooter downFooter downFooter";
+  }
+
+  .box {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+}
